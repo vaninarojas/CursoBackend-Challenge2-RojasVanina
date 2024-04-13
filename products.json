@@ -1,0 +1,29 @@
+[
+  {
+    "id": 3,
+    "title": "Pantalón",
+    "description": "oscuro",
+    "price": 15000,
+    "thumbnail": "oscuro.jpg",
+    "code": "COD002",
+    "stock": 50
+  },
+  {
+    "id": 4,
+    "title": "Remera",
+    "description": "Rayada",
+    "price": 10000,
+    "thumbnail": "rayada.jpg",
+    "code": "COD003",
+    "stock": 200
+  },
+  {
+    "id": 5,
+    "title": "Pantalón",
+    "description": "claro",
+    "price": 18000,
+    "thumbnail": "claro.jpg",
+    "code": "COD004",
+    "stock": 70
+  }
+]
