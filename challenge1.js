@@ -112,3 +112,42 @@ productManager.getProductById(1).then(product => console.log("Producto encontrad
 productManager.updateProduct(1, { price: 25000 }); 
 
 productManager.deleteProduct(1); 
+
+
+const test = async () => {
+
+    await productManager.addProduct("Remera", "Rayada", 10000, "rayada.jpg", "COD003", 200);
+
+    await productManager.addProduct("Pantalón", "claro", 18000, "claro.jpg", "COD004", 70);
+
+
+
+    const products = await productManager.getProducts();
+
+    console.log("Todos los productos:", products);
+
+
+
+    const product = await productManager.getProductById(2);
+
+    console.log("Producto encontrado por ID:", product);
+
+
+
+    await productManager.updateProduct(2, { price: 20000 });
+
+
+
+    await productManager.deleteProduct(2);
+
+
+
+    const productsAfterDelete = await productManager.getProducts();
+
+    console.log("Todos los productos después de eliminar:", productsAfterDelete);
+
+}
+
+
+
+test();
